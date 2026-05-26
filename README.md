@@ -3,6 +3,9 @@
 Exploratory SQL analysis of UK Consumer Price Inflation data (1988–2024)
 using the ONS MM23 dataset, implemented in SQLite.
 
+This project was subsequently migrated from SQLite to PostgreSQL to demonstrate 
+knowledge of production-grade relational database systems.
+
 ## Dataset
 **Source:** Office for National Statistics (ONS) — Consumer Price Indices (MM23)  
 **Coverage:** Annual UK inflation rates, 1988–2024  
@@ -77,6 +80,3 @@ SQLite | Python 3 | pandas | VSCode
 2. Run `prepare_cpi.py` to generate `cpi_clean.csv`
 3. Import into SQLite: `sqlite3 test.db` → `.mode csv` → `.import cpi_clean.csv cpi_annual`
 4. Run queries from `sql.sql` using the SQLite VSCode extension (alexcvzz)
-
-## Author
-Iffah Mojid
